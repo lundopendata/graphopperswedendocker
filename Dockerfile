@@ -2,4 +2,4 @@ FROM java
 WORKDIR /app
 EXPOSE 8989
 COPY ./script.sh ./
-CMD ["./script.sh", "europe/sweden"]
+CMD ["./script.sh", "europe/germany/berlin"]
