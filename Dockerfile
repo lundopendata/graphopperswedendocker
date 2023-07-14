@@ -12,6 +12,6 @@ COPY config.yml .
 COPY gh.sh .
 RUN chmod +x gh.sh
 
-RUN wget https://github.com/graphhopper/graphhopper/releases/download/6.0/graphhopper-web-6.0.jar 
+RUN wget https://repo1.maven.org/maven2/com/graphhopper/graphhopper-web/7.0/graphhopper-web-7.0.jar 
 
 CMD /graphhopper/gh.sh ${region} ${subregion} ${force}
